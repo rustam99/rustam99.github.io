@@ -1,0 +1,188 @@
+.reviews {
+	padding: 50px 0;
+
+	&__title {
+		margin-top: 0;
+		font-size: 1.3em;
+	}
+
+	&__date {
+		margin-top: 5px;
+		color: $gray;
+		line-height: 16px;
+	}
+
+	&__button {
+		width: 100%;
+	}
+
+	&__additional {
+		line-height: 22px;
+		color: $orange;
+	}
+
+	&__text {
+		margin-top: 5px;
+		line-height: 20px;
+	}
+
+	&__images {
+		display: flex;
+		margin-top: 10px;
+	}
+
+	&__img {
+		max-width: none;
+
+		& + & {
+			margin-left: 10px;
+		}
+	}
+
+	&__content {
+		margin-top: 25px;
+		font-size: 12px;
+	}
+
+	&__photo {
+		flex-basis: px(0.08);
+	}
+
+	&__name {
+		flex-basis: px(0.19);
+		line-height: 16px;
+	}
+
+	&__comment {
+		flex-basis: px(0.43);
+
+		.reviews__img {
+			cursor: pointer;
+		}
+
+		&_disable {
+			color: $deep-gray;
+		}
+	}
+
+	&__status {
+		flex-basis: px(0.14);
+	}
+
+	&__actions {
+		flex-basis: px(0.16);
+		padding-right: 0;
+	}
+
+	@include tablet {
+		&__status {
+			display: flex;
+			justify-content: center;
+			order: 1;
+			flex-basis: 100%;
+		}
+
+		&__photo {
+			order: 2;
+		}
+
+		&__name {
+			order: 3;
+			visibility: visible;
+		}
+
+		&__comment {
+			order: 4;
+			flex-basis: 100%;
+			text-align: center;
+
+			.reviews__additional {
+				display: none;
+			}
+		}
+
+		&__actions {
+			order: 5;
+		}
+
+		&__text {
+			text-align: center;
+		}
+
+		&__images {
+			justify-content: center;
+		}
+
+		&__additional {
+			.reviews__photo {
+				display: none;
+			}
+
+			.reviews__name {
+				padding-bottom: 0;
+			}
+
+			.reviews__comment {
+				padding-top: 0;
+			}
+		}
+
+		&__date {
+			order: 1;
+		}
+
+		.stars,
+		.rating-list {
+			justify-content: center;
+		}
+	
+		.toggle-text {
+			text-align: center;
+	
+			&__content {
+				margin: 0 auto;
+			}
+		}
+
+		.status {
+			order: 2;
+			margin-left: 20px;
+		}
+	}
+
+	@include phone {
+		&__content {
+			border: 1px solid $medium-gray;
+		}
+
+		&__status {
+			justify-content: space-between;
+		}
+
+		&__name {
+			flex-basis: 71%;
+		}
+
+		&__text {
+			text-align: left;
+		}
+
+		&__comment {
+			text-align: left;
+		}
+
+		&__images,
+		.stars,
+		.rating-list {
+			justify-content: flex-start;
+		}
+
+		.rating-list__item:last-child {
+			margin-left: 0;
+		}
+
+		.toggle-text {
+			text-align: left;
+		}
+	}
+}

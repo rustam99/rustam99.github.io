@@ -1,0 +1,29 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+
+	&__row {
+		&_head {
+			border: 1px solid $medium-gray;
+		}
+
+		&_bordered {
+			border-bottom: 1px solid $medium-gray;
+
+			.table__cell {
+				border-bottom-width: 0;
+			}
+		}
+	}
+
+	&__cell {
+		vertical-align: top;
+		padding: 10px 15px;
+		font-size: 12px;
+
+		&_head {
+			font-size: 13px;
+			color: $deep-gray;
+		}
+	}
+}

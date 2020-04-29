@@ -1,0 +1,29 @@
+.status {
+	padding: 4px 8px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: .2em;
+
+	&_done {
+		background-color: $green;
+	}
+
+	&_process {
+		background-color: rgba($green, .5);
+	}
+
+	&_disable {
+		background-color: $gray;
+	}
+
+	&_full {
+		width: 100%;
+
+		@include tablet {
+			width: auto;
+		}
+	}
+}

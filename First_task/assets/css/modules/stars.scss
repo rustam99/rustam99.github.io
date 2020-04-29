@@ -1,0 +1,27 @@
+.stars {
+	display: flex;
+
+	&__icon {
+		width: 12px;
+		height: 11px;
+		background-image: url('/img/icons/stars.png');
+
+		& + & {
+			margin-left: 5px;
+		}
+
+		&_half {
+			background-position-x: -13px;
+		}
+
+		&_empty {
+			background-position-x: -25px;
+		}
+	}
+
+	&__value {
+		margin-left: 5px;
+		color: $gray;
+		font-weight: bold;
+	}
+}
