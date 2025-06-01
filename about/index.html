@@ -35,8 +35,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 					rel="stylesheet">
-		<script type="module" crossorigin src="/assets/main-oRozvPkQ.js"></script>
-		<link rel="stylesheet" crossorigin href="/assets/main-CroJbN6M.css">
+		<script type="module" crossorigin src="/assets/main-Dtapn13o.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/main-DiujyL2U.css">
 	</head>
 	<body>
 	<div id="app">	<header class="header py-3 js-header">
@@ -55,12 +55,15 @@
 					</svg>
 					<span class="header__address-text ml-1">г.Воронеж ул.Баррикадная 28</span>
 				</div>
-				<a class="header__phone row row-align-center link ml-4" href="tel:+74732370599">
+				<div class="header__phone row ml-4 link">
 					<svg width="24" height="24">
 						<use href="#phone"></use>
 					</svg>
-					<span class="header__phone-text ml-1">+7 (473) 237-05-99</span>
-				</a>
+					<div class="header__phone-col row row-column ml-1">
+						<a class="header__phone-text link" href="tel:+74732370599">+7 (473) 237-05-99</a>
+						<a class="header__phone-text link mt-1" href="tel:+79525458272">+7 (952) 545-82-72</a>
+					</div>
+				</div>
 				<svg class="header__address-tooltip color-primary" width="24" height="24" data-tooltip="address-tooltip">
 					<use href="#location"></use>
 				</svg>
@@ -78,6 +81,9 @@
 						<div class="tooltip__arrow" data-popper-arrow></div>
 						<a class="row row-align-center link" href="tel:+74732370599">
 							+7 (473) 237-05-99
+						</a>
+						<a class="row row-align-center link mt-1" href="tel:+79525458272">
+							+7 (952) 545-82-72
 						</a>
 					</div>
 				</div>
@@ -151,11 +157,10 @@
 							<strong>Перечень платных услуг:</strong> перечень платных медицинских услуг со стоимостью в рублях представлен в
 							<a href="/files/Прейскурант.pdf" class="link f-medium" target="_blank">прейскуранте</a> клиники.
 							Сведения об условиях, порядке, форме предоставления платных медицинских услуг и порядке их оплаты определяют:
-							<a href="/files/c80a8e_c320a6e649914d1b875db869cd009d8e.pdf" class="link" target="_blank">положение о предоставлении платных медицинских услуг клиники;</a>
-							<a href="/files/c80a8e_530a516c839a48c99034deff84f0351f.pdf" class="link" target="_blank">договор на оказание платных медицинских услуг; приложение к договору№1.</a>
+							<a href="/files/Положение_о_предоставлении_платных_услуг.pdf" class="link" target="_blank">положение о предоставлении платных медицинских услуг клиники;</a>
+							<a href="/files/Договор_на_оказание_платных_услуг.pdf" class="link" target="_blank">договор на оказание платных медицинских услуг;</a>
 							Сроки гарантии на оказываемые в клинике стоматологические услуги, работы, и порядок их установления определяют:
-							<a href="/files/c80a8e_530a516c839a48c99034deff84f0351f.pdf" class="link" target="_blank">приложение к договору №2;</a>
-							<a href="/files/c80a8e_8d9720e027444b2ca77b44129d8aae06.pdf" class="link" target="_blank">положение об установлении гарантийного срока службы при оказании стоматологической помощи.</a>
+							<a href="/files/Полодение_о_гарантии.pdf" class="link" target="_blank">положение об установлении гарантийного срока службы при оказании стоматологической помощи.</a>
 						</li>
 						<li class="about__item f-body-large"><strong>ООО Стоматология «Свет Улыбки»</strong> на данный момент не участвует в территориальных программах.</li>
 						<li class="about__item f-body-large">
@@ -207,14 +212,19 @@
 								<use href="#call"></use>
 							</svg>
 							<div class="feedback__desc font-alegreya h3 my-1">Звоните</div>
-							<a class="feedback__text link f-body-large" href="tel:+74732370599">+7 (473) 237-05-99</a>
+							<div class="feedback__link">
+								<a class="feedback__text link f-body-large" href="tel:+74732370599">+7 (473) 237-05-99</a>
+							</div>
+							<div class="feedback__link">
+								<a class="feedback__text link f-body-large" href="tel:+79525458272">+7 (952) 545-82-72</a>
+							</div>
 						</div>
 						<div class="feedback__item">
 							<svg class="feedback__icon" width="65" height="64">
 								<use href="#email"></use>
 							</svg>
 							<div class="feedback__desc font-alegreya h3 my-1">Пишите</div>
-							<a class="feedback__text link f-body-large" href="mailto:svet_ulibki@info.ru">svet_ulibki@info.ru</a>
+							<a class="feedback__text link f-body-large" href="mailto:svetulibki@mail.ru">svetulibki@mail.ru</a>
 						</div>
 						<div class="feedback__item">
 							<svg class="feedback__icon" width="65" height="64">
@@ -225,19 +235,9 @@
 						</div>
 					</div>
 				</div>
-				<form class="feedback__form row row-center mx-n-2 js-form">
-					<label class="feedback__field m-2 w-25">
-						<input class="input feedback__input" type="text" placeholder="Имя" name="name">
-						<span class="input-error js-input-error">Необходимо заполнить поле</span>
-					</label>
-					<label class="feedback__field m-2 w-25">
-						<input class="input feedback__input" type="text" inputmode="numeric" placeholder="+7 (495) 888-00-00" data-mask="phone" name="phone">
-						<span class="input-error js-input-error">Необходимо заполнить поле</span>
-					</label>
-					<div class="feedback__action feedback__field m-2 w-25">
-						<button class="feedback__button button button_size_large w-100">Записаться</button>
-					</div>
-				</form>
+				<div class="feedback__action row row-center">
+					<a class="feedback__button button button_size_large w-100" href="tel:+74732370599">Позвонить</a>
+				</div>
 			</div>
 		</section>	</main>
 	<footer class="footer section-indent">
@@ -250,75 +250,17 @@
 					</svg>
 					<span class="ml-1">г.Воронеж ул.Баррикадная 28</span>
 				</div>
-				<a class="footer__phone row row-align-center color-white ml-4" href="tel:+74732370599">
+				<div class="footer__phone row row-align-center ml-4">
 					<svg width="24" height="24">
 						<use href="#phone"></use>
 					</svg>
-					<span class="ml-1">+7 (473) 237-05-99</span>
-				</a>
+					<a class="footer__link color-white ml-1" href="tel:+74732370599">+7 (473) 237-05-99</a>
+					<a class="footer__link color-white ml-1" href="tel:+79525458272">+7 (952) 545-82-72</a>
+				</div>
 			</div>
 		</div>
 	</footer>	</div>
-	<div id="form-modal" class="modal">
-		<div class="modal__inner">
-			<div class="modal__content">
-				<button class="modal__close js-close-modal">
-					<svg class="modal__icon" width="30" height="30">
-						<use href="#cross"></use>
-					</svg>
-				</button>
-				<form class="modal-form js-form">
-					<h2 class="modal-form__title font-alegreya h2 mt-0 mb-1">Запись на прием</h2>
-					<div class="modal-form__field">
-						<label class="modal-form__label">
-							<input class="input modal-form__input" type="text" placeholder="Имя" name="name">
-							<span class="input-error js-input-error">Необходимо заполнить поле</span>
-						</label>
-					</div>
-					<div class="modal-form__field">
-						<label class="modal-form__label">
-							<input class="input modal-form__input" type="text" inputmode="numeric" placeholder="+7 (495) 888-00-00" data-mask="phone" name="phone">
-							<span class="input-error js-input-error">Необходимо заполнить поле</span>
-						</label>
-					</div>
-					<div class="modal-form__field">
-						<button class="button button_size_large w-50">Записаться</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div><div id="feedback-modal" class="modal">
-		<div class="modal__inner">
-			<div class="modal__content">
-				<button class="modal__close js-close-modal">
-					<svg class="modal__icon" width="30" height="30">
-						<use href="#cross"></use>
-					</svg>
-				</button>
-				<div class="modal-feedback">
-					<h2 class="modal-feedback__title font-alegreya h2 mt-0 mb-1">Данные отправлены</h2>
-					<p class="modal-feedback__text f-body-large">Наш администратор в скором времени свяжется с вами</p>
-				</div>
-			</div>
-		</div>
-	</div><div id="error-modal" class="modal">
-		<div class="modal__inner">
-			<div class="modal__content">
-				<button class="modal__close js-close-modal">
-					<svg class="modal__icon" width="30" height="30">
-						<use href="#cross"></use>
-					</svg>
-				</button>
-				<div class="modal-feedback">
-					<h2 class="modal-feedback__title font-alegreya h2 mt-0 mb-1">Ошибка отправки</h2>
-					<p class="modal-feedback__text f-body-large">
-						Что-то пошло не так, приносим свои извинение за неудобство,<br>
-						попробуйте повторить попытку позже
-					</p>
-				</div>
-			</div>
-		</div>
-	</div><svg class="svg-sprite">
+	<svg class="svg-sprite">
 		<symbol id="phone" fill="none" viewBox="0 0 24 24">
 			<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 						d="M3 5.5a15.5 15.5 0 0 0 16.65 15.46c.43-.03.65-.05.85-.16.16-.1.32-.27.4-.44.1-.2.1-.44.1-.92v-2.82c0-.4 0-.6-.07-.78a1 1 0 0 0-.27-.4c-.14-.12-.33-.18-.71-.32l-3.21-1.17c-.44-.16-.66-.24-.87-.23a1 1 0 0 0-.52.19c-.17.12-.29.32-.53.72L14 16a12.1 12.1 0 0 1-6-6l1.37-.82c.4-.24.6-.36.72-.53a1 1 0 0 0 .19-.52c.01-.2-.07-.43-.23-.87l-1.17-3.2c-.14-.39-.2-.58-.33-.72a1 1 0 0 0-.4-.27C7.99 3 7.79 3 7.39 3H4.56c-.48 0-.72 0-.92.1-.17.08-.34.24-.44.4-.11.2-.13.42-.16.85-.03.38-.04.76-.04 1.15Z"/>
