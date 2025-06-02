@@ -7,9 +7,17 @@
 	<meta name="description" content="Стоматология &quot;Свет Улыбки&quot; г.Воронеж, ул.Баррикадная 28 район ВАИ">
 	<meta property="og:title" content="Ваи | Воронежская область | Стоматология &quot;Свет Улыбки&quot;">
 	<meta property="og:description" content="Стоматология &quot;Свет Улыбки&quot; г.Воронеж, ул.Баррикадная 28 район ВАИ">
-	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="svet_ulibki">
+	<meta property="og:url" content="https://svetulybki.ru">
+	<meta property="og:site_name" content="svetulybki">
 	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="https://svetulybki.ru/favicon-512x512.png">
+	<meta property="og:image:width" content="512">
+	<meta property="og:image:height" content="512">
+	<meta property="og:image:alt" content="Стоматология &quot;Свет Улыбки&quot;">
+	<meta property="vk:title" content="Ваи | Воронежская область | Стоматология &quot;Свет Улыбки&quot;">
+	<meta property="vk:description" content="Стоматология &quot;Свет Улыбки&quot; г.Воронеж, ул.Баррикадная 28 район ВАИ">
+	<meta property="vk:image" content="https://svetulybki.ru/favicon-512x512.png">
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
@@ -23,7 +31,7 @@
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
 	<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128"/>
-	<meta name="application-name" content="&nbsp;"/>
+	<meta name="application-name" content="Стоматология &quot;Свет Улыбки&quot;"/>
 	<meta name="msapplication-TileColor" content="#FFFFFF"/>
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
 	<meta name="msapplication-square70x70logo" content="/mstile-70x70.png"/>
@@ -147,7 +155,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="feedback section-indent">
+		<section class="feedback section-indent" itemscope itemtype="https://schema.org/Organization">
 			<div class="container">
 				<svg class="feedback__line" width="186" height="126">
 					<use href="#feedbackLine"></use>
@@ -155,7 +163,7 @@
 				<h2 class="feedback__title h1 font-alegreya color-primary">Профессиональная стоматология для вашей улыбки</h2>
 				<div class="feedback__subtitle h3 mt-2 f-medium">
 					Доверьте здоровья ваших зубов экспертам клиники
-					<span class="font-alegreya color-primary f-bold">"Свет улыбки"</span>
+					<span class="font-alegreya color-primary f-bold" itemprop="name">"Свет улыбки"</span>
 				</div>
 				<div class="feedback__wrap">
 					<div class="feedback__row row row-wrap row-center">
@@ -165,7 +173,7 @@
 							</svg>
 							<div class="feedback__desc font-alegreya h3 my-1">Звоните</div>
 							<div class="feedback__link">
-								<a class="feedback__text link f-body-large" href="tel:+74732370599">+7 (473) 237-05-99</a>
+								<a class="feedback__text link f-body-large" href="tel:+74732370599" itemprop="telephone">+7 (473) 237-05-99</a>
 							</div>
 							<div class="feedback__link">
 								<a class="feedback__text link f-body-large" href="tel:+79525458272">+7 (952) 545-82-72</a>
@@ -176,14 +184,17 @@
 								<use href="#email"></use>
 							</svg>
 							<div class="feedback__desc font-alegreya h3 my-1">Пишите</div>
-							<a class="feedback__text link f-body-large" href="mailto:svetulybki@mail.ru">svetulybki@mail.ru</a>
+							<a class="feedback__text link f-body-large" href="mailto:svetulybki@mail.ru" itemprop="email">svetulybki@mail.ru</a>
 						</div>
 						<div class="feedback__item">
 							<svg class="feedback__icon" width="65" height="64">
 								<use href="#visit"></use>
 							</svg>
 							<div class="feedback__desc font-alegreya h3 my-1">Приходите</div>
-							<div class="feedback__text color-link f-body-large">г.Воронеж ул.Баррикадная 28</div>
+							<div class="feedback__text color-link f-body-large" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+								<span itemprop="addressLocality">г.Воронеж</span>
+								<span itemprop="streetAddress">ул.Баррикадная 28</span>
+							</div>
 						</div>
 					</div>
 				</div>
