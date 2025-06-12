@@ -1,0 +1,20 @@
+{
+  "short_name": "Свет улыбки",
+  "name": "Стоматологическая клиника",
+  "icons": [
+    {
+      "src": "/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0c8075",
+  "background_color": "#ffffff"
+}
